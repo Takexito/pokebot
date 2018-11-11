@@ -1,0 +1,27 @@
+
+plugins {
+    id'java'
+    id'application'
+    id'com.github.johnrengelman.shadow' version '2.0.1'
+}
+
+group 'com.tikslab'
+version '1.0-SNAPSHOT'
+
+
+mainClassName = 'com.tikslab.pokebot'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'net.dv8tion:JDA:3.8.1_439'
+}
+
+compileJava.options.encoding = 'UTF-8'
